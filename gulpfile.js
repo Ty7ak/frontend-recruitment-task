@@ -9,6 +9,9 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
 
+const dartSass = require("dart-sass");
+sass.compiler = dartSass;
+
 // File paths
 const files = { 
     scssPath: 'src/scss/**/*.scss',
